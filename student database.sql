@@ -12,3 +12,16 @@ select *from student
 ALTER table student ADD(mother_name varchar(40),father_name varchar(40))
 RENAME table student to students
 RENAME table students to student
+create database faculty
+use faculty
+create table faculty(id varchar(20),sname varchar(30))
+insert into faculty values('023521','niharika')
+insert into faculty values('023528','nishritha')
+select *from faculty
+drop table faculty
+truncate table faculty
+use student
+select *from student
+alter table  student drop father_name
+set sql_safe_updates=0
+update student set sname='mohan' where id='211FA04521'
