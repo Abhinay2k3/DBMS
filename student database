@@ -8,3 +8,7 @@ insert into student values('211FA04503','abhiram','05-12-2003','85','male',82897
 insert into student values('211FA04504','pallavi','12-10-2003','90','female',8289785472)
 insert into student values('211FA04505','lehari','12-04-2003','98.6','female',8289785472)
 insert into student values('211FA04506','shamitha','12-05-2003','80','female',8289785472)
+select *from student
+ALTER table student ADD(mother_name varchar(40),father_name varchar(40))
+RENAME table student to students
+RENAME table students to student
