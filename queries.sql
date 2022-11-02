@@ -34,3 +34,22 @@ select *from job;
 select *from location;
 select *from employee where last_name='smith'
 select *from employee;
+select first_name,last_name,salary,comm from employee
+select employee_id"id of the employee",last_name"name of the employee",department_id"Department ID" from employee
+select last_name, salary*12 "annual salary" from employee
+select *from employee where last_name='SMITH';
+select *from employee where department_id=20
+select *from employee where salary between 3000 and 4500
+select *from employee where department_id in (20,30)
+select last_name,salary,comm,department_id from employee where department_id not in (10,30)
+select *from employee where last_name like 'S%'
+select *from employee where last_name like 'S%H'
+select *from employee where last_name like 'S___'
+select *from employee where department_id=10 and salary>3500
+select *from employee where comm is NULL
+select employee_id,last_name from employee order by employee_id asc
+select employee_id,last_name from employee order by salary desc
+select *from employee order by last_name,salary desc
+select *from employee order by last_name,department_id desc
+select count(distinct department_id) from employee
+select avg(salary), max(salary),min(salary) from employee order by department_id
